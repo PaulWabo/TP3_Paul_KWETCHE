@@ -113,3 +113,27 @@ main ul li{
 	justify-content: space-around;
 	align-items: center;
 }
+.required{
+    color: red;
+}
+label{
+    display: inline-block;
+    margin:  15px;
+}
+.info-perso, .info-reservation{
+    font-size: 20px;
+    width: 45%;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+.formulaires{
+    margin-top: 15%;
+    margin-bottom: 15%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <a href="index.html"><img src="./images/PAUL’S & co..png" alt="logo"></a>
+            <ul>
+                <li><a class="btn" href="index.html">ACCUEIL</a></li>
+                <li><a class="btn" href="Reservation.html">RESERVATION</a></li>
+                <li><a class="btn" href="Restaurant.html">RESTAURANT</a></li>
+                <li><a class="btn" href="Ma commande.html">MA COMMANDE</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container formulaires">
+        <form action="" class="container flex">
+            <fieldset class="info-perso">
+                <legend>Informations Personelles</legend>
+                <label for="nom">Votre nom <span class="required">*</span></label>
+                <input type="text" name="nom" required placeholder="Doe"><br>
+                <label for="prenom">Votre Prenom<span class="required">*</span></label>
+                <input type="text" name="prenom" placeholder="John"><br>
+                <label for="telephone">Votre numéro de téléphone <span class="required">*</span></label>
+                <input type="tel" name="telephone" required placeholder="(123) 456 7890"><br>
+                <label for="email">Votre adresse Mail</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@qwe.ca">
+            </fieldset>
+            <fieldset class="info-reservation">
+                <legend>Informations de Reservation</legend>
+                <label for="nbrPersonnes">Nombres de personnes présente pour la reservation <span class="required">*</span></label>
+                <input type="number" name="nbrPersonnes"><br>
+                <label for="date">Date de reservation<span class="required">*</span></label>
+                <input type="date" name="date" id="date" required><br>
+                <label for="salle">Choix de salle<span class="required">*</span></label>
+                <select name="salle" id="salle"><br>
+                    <option value="salle a manger">Salle a Manger<span class="required">*</span></option>
+                    <option value="terasse">Térasse</option>
+                </select><br>
+                <label for="heure">Heure<span class="required">*</span></label>
+                <select name="heure" id="heure">
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="17:00">17:00</option>
+                    <option value="17:30">17:30</option>
+                    <option value="18:00">18:00</option>
+                    <option value="18:30">18:30</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                </select>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="container foot">
+            <div class="container foot-haut flex">
+                <p>Réalisé par : Paul Godefroy</p>
+                <p>Réseaux Sociaux</p>
+            </div>
+            <hr class="ligne">
+            <div class="container foot-bas flex">
+                <p>Intégration Web 1</p>
+                <p>Cégep garneau</p>
+                <p>Hiver 2025</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
