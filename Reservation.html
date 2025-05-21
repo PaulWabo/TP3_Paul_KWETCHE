@@ -12,52 +12,61 @@
             <a href="index.html"><img src="./images/PAUL’S & co..png" alt="logo"></a>
             <ul>
                 <li><a class="btn" href="index.html">ACCUEIL</a></li>
-                <li><a class="btn" href="Reservation.html">RESERVATION</a></li>
+                <li><a class="btn actuel" href="Reservation.html">RESERVATION</a></li>
                 <li><a class="btn" href="Restaurant.html">RESTAURANT</a></li>
-                <li><a class="btn" href="Ma commande.html">MA COMMANDE</a></li>
+                <li><a class="btn commande" href="Ma commande.html">MA COMMANDE</a></li>
             </ul>
         </div>
     </header>
     <main class="container formulaires">
+        <h1>Reservation</h1>
         <form action="" class="container flex">
-            <fieldset class="info-perso">
+            <fieldset class="info-perso grid-formulaire">
                 <legend>Informations Personelles</legend>
-                <label for="nom">Votre nom <span class="required">*</span></label>
-                <input type="text" name="nom" required placeholder="Doe"><br>
-                <label for="prenom">Votre Prenom<span class="required">*</span></label>
-                <input type="text" name="prenom" placeholder="John"><br>
-                <label for="telephone">Votre numéro de téléphone <span class="required">*</span></label>
-                <input type="tel" name="telephone" required placeholder="(123) 456 7890"><br>
-                <label for="email">Votre adresse Mail</label>
-                <input type="email" name="email" id="email" placeholder="johndoe@qwe.ca">
+                <div class="label">
+                    <label for="nom">Votre Nom<span class="required">*</span></label>
+                    <label for="prenom">Prenom<span class="required">*</span></label>
+                    <label for="telephone">Téléphone<span class="required">*</span></label>
+                    <label for="email">Adresse Mail</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="nom" required placeholder="Doe"><br>
+                    <input type="text" name="prenom" placeholder="John">
+                    <input type="tel" name="telephone" required placeholder="(123) 456 7890">
+                    <input type="email" name="email" id="email" placeholder="johndoe@qwe.ca">
+                </div>
             </fieldset>
-            <fieldset class="info-reservation">
+            <fieldset class="info-reservation grid-formulaire">
                 <legend>Informations de Reservation</legend>
-                <label for="nbrPersonnes">Nombres de personnes présente pour la reservation <span class="required">*</span></label>
-                <input type="number" name="nbrPersonnes"><br>
-                <label for="date">Date de reservation<span class="required">*</span></label>
-                <input type="date" name="date" id="date" required><br>
-                <label for="salle">Choix de salle<span class="required">*</span></label>
-                <select name="salle" id="salle"><br>
-                    <option value="salle a manger">Salle a Manger<span class="required">*</span></option>
-                    <option value="terasse">Térasse</option>
-                </select><br>
-                <label for="heure">Heure<span class="required">*</span></label>
-                <select name="heure" id="heure">
-                    <option value="12:00">12:00</option>
-                    <option value="12:30">12:30</option>
-                    <option value="13:00">13:00</option>
-                    <option value="13:30">13:30</option>
-                    <option value="17:00">17:00</option>
-                    <option value="17:30">17:30</option>
-                    <option value="18:00">18:00</option>
-                    <option value="18:30">18:30</option>
-                    <option value="19:00">19:00</option>
-                    <option value="19:30">19:30</option>
-                    <option value="20:00">20:00</option>
-                    <option value="20:30">20:30</option>
-                    <option value="21:00">21:00</option>
-                </select>
+                <div>
+                    <label for="nbrPersonnes">Nombres de personnes  <span class="required">*</span></label>
+                    <label for="date">Date de reservation<span class="required">*</span></label>
+                    <label for="salle">Choix de salle<span class="required">*</span></label>
+                    <label for="heure">Heure<span class="required">*</span></label>
+                </div>
+                <div class="input">
+                    <input type="number" name="nbrPersonnes"><br>
+                    <input type="date" name="date" id="date" required><br>
+                    <select name="salle" id="salle">
+                        <option value="salle a manger">Salle a Manger<span class="required">*</span></option>
+                        <option value="terasse">Térasse</option>
+                    </select><br>
+                    <select name="heure" id="heure">
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                    </select>
+                </div>
             </fieldset>
         </form>
     </main>
@@ -65,7 +74,7 @@
         <div class="container foot">
             <div class="container foot-haut flex">
                 <p>Réalisé par : Paul Godefroy</p>
-                <p>Réseaux Sociaux</p>
+                <p>Réseaux Sociaux : </p>
             </div>
             <hr class="ligne">
             <div class="container foot-bas flex">

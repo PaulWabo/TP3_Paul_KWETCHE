@@ -11,6 +11,12 @@ body{
 	width: 90%;
 	margin: 0 auto;
 }
+a{
+    text-decoration: none;
+}
+.actuel{
+    text-decoration: underline;
+}
 header{
     background-color: red;
 }
@@ -37,6 +43,9 @@ main ul li{
     display: inline;
     margin: 10px;
 }
+.img{
+    width: 40%;
+}
 .btn {
     color:red;
 	display: inline-block;
@@ -54,12 +63,30 @@ main ul li{
 }
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
     margin: 50px;
     gap:30px;
 }
 
+.grid-restaurant{
+display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    margin: 50px;
+    gap:30px;
+}
+.grid-recu, .grid-formulaire{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+}
+
+.grid-restau{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 50px;
+}
 .image-3{
     grid-column: 3 / span 2;
     grid-row: 1 / span 3;
@@ -98,6 +125,20 @@ main ul li{
     text-align: center;
     display: flex;
     margin-top: 200px;
+    width: 40%;
+}
+.cartes-recu{
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    display: flex;
 }
 .ligne{
     background-color: black;
@@ -136,7 +177,7 @@ label{
 }
 .info-perso, .info-reservation{
     font-size: 20px;
-    width: 45%;
+    width: 50%;
 }
 form{
     display: flex;
@@ -146,6 +187,12 @@ input{
     border-radius: 5px;
     border: none;
     font-size: 20px;
+}
+.label,  input {
+    margin: 20px;
+}
+input, select{
+        margin: 25px;
 }
 .formulaires{
     margin-top: 15%;
@@ -159,4 +206,24 @@ input{
 }
 h3{
     opacity: 0.5;
+}
+
+td, th{
+    padding: 10px 20px;
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+}
+table{
+        border-collapse: collapse;
+        margin-bottom: 50px;
+}
+tr:nth-child(even), th {
+    background-color: #ffc2c2;
+  }
+/*tr  > th:nth-child(2) {
+border-radius: 0%;
+}*/
+.commande{
+    background-color: black;
 }
