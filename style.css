@@ -8,7 +8,7 @@ body{
 }
 .container{
 	max-width: 1200px;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 }
 a{
@@ -24,6 +24,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+    width: 100%;
 }
 footer{
     background-color: red;
@@ -79,7 +80,7 @@ display: grid;
 .grid-recu, .grid-formulaire{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 50px;
+    
 }
 
 .grid-restau{
@@ -118,7 +119,6 @@ display: grid;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-bottom: 50px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -133,13 +133,15 @@ display: grid;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-bottom: 50px;
-    width: 30%;
     display: flex;
     flex-direction: column;
     height: 100%;
     text-align: center;
     display: flex;
 }
+
+
+
 .ligne{
     background-color: black;
     height: 2px;
@@ -172,37 +174,37 @@ display: grid;
     color: red;
 }
 label{
-    display: inline-block;
+    display: block;
     margin:  15px;
 }
 .info-perso, .info-reservation{
     font-size: 20px;
-    width: 50%;
-}
-form{
-    display: flex;
-    justify-content: space-between;
+    padding: 50px;
 }
 input{
     border-radius: 5px;
     border: none;
     font-size: 20px;
 }
-.label,  input {
-    margin: 20px;
-}
-input, select{
-        margin: 25px;
-}
+
+
 .formulaires{
     margin-top: 15%;
     margin-bottom: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .references{
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
     margin-bottom: 20px;
+}
+.localisation{
+    width: 100%;
+}
+.texte{
+    width: 50%;
+    text-align: center;
 }
 h3{
     opacity: 0.5;
@@ -211,9 +213,9 @@ h3{
 td, th{
     padding: 10px 20px;
     text-align: center;
-    width: 70%;
     border-radius: 20px;
 }
+
 table{
         border-collapse: collapse;
         margin-bottom: 50px;
@@ -226,4 +228,100 @@ border-radius: 0%;
 }*/
 .commande{
     background-color: black;
+}
+
+/*Ajout des propriétées responsive*/
+
+
+
+.menu-button{
+    display: none;
+}
+
+@media screen and (max-width : 960px) {
+    .menu-button{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .section-cartes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .references{
+        display: inline;
+    }
+    
+.grid-restaurant{
+    display: grid;
+    grid-template-columns: 1fr 1fr   ;
+    grid-template-rows: 0.5fr ;
+    margin: 50px;
+    gap:30px;
+    }
+    .image-3{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+.image-4{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+.image-5{
+    grid-row: 3 / 3;
+    grid-column: 1 / 2;
+}
+.formulaires, .grid-formulaire{
+grid-template-columns: 1fr 1fr;
+}
+
+}
+
+@media screen and (max-width : 570px) {
+    .facture{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .accueil{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cartes-restau{
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+    }
+    .section-cartes{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .grid-restaurant{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.5fr ;
+    margin: 50px;
+    gap:30px;
+    }
+    .image-2{
+        grid-row: 2;
+    }
+    .image-3{
+    grid-row: 3 / span 1;
+}
+.image-4{
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+}
+.image-5{
+    grid-row: 5 / span 1;
+    grid-column: 1 / 2;
+}
+.image-6{
+    grid-row: 6 / span 1;
+}
+.formulaires, .grid-formulaire{
+grid-template-columns: 1fr;
+}
 }

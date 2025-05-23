@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue dans notre restaurant, où saveurs et convivialité se rencontrent !
+Découvrez une cuisine authentique, préparée avec des ingrédients frais et de qualité. Que ce soit pour un repas entre
+ amis, en famille ou un moment romantique, notre équipe vous accueille dans une ambiance chaleureuse et raffinée.
+  Réservez votre table dès maintenant !">
     <title>Paul's & co</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
 </head>
 <body>
     <header>
         <div class="container nav">
             <a href="index.html"><img src="./images/PAUL’S & co..png" alt="logo"></a>
-            <ul>
+            <ul class="menu">
                 <li><a class="btn actuel" href="index.html">ACCUEIL</a></li>
                 <li><a class="btn" href="Reservation.html">RESERVATION</a></li>
                 <li><a class="btn" href="Restaurant.html">RESTAURANT</a></li>
                 <li><a class="btn commande" href="Ma commande.html">MA COMMANDE</a></li>
             </ul>
+            <button class="menu-button" aria-label="Menu">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+            </button>
         </div>
     </header>
 
-    <main>
-        <section class="container flex">
+    <main class="container">
+        <div class="container flex accueil">
             <div class="cartes-restau">
                 <h1>PAUL'S & CO</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum, ea tempora voluptatem odit, dolorem commodi repellat explicabo aperiam earum molestias quia, officiis fugiat aliquid ducimus. Animi laborum maiores odit!</p>
+                <p>Bienvenue dans notre restaurant, où saveurs et convivialité se rencontrent !
+Découvrez une cuisine authentique, préparée avec des ingrédients frais et de qualité. Que ce soit pour un repas entre
+ amis, en famille ou un moment romantique, notre équipe vous accueille dans une ambiance chaleureuse et raffinée.
+  Réservez votre table dès maintenant !</p>
                 <ul>
                     <li><a class="btn" href="Ma commande.html">+    Commander en ligne</a></li>
                     <li><a class="btn" href="Reservation.html">+    Reserver</a></li>
@@ -32,19 +47,19 @@
             <div class="img">
                 <img src="./images/Menu.png" alt="menu du restaurant">
             </div>
-        </section>
+        </div>
 
             <div class="container">
                 <h1 class="temoignages">Témoignages</h1>
                 <h2 class="clients-satisfaits">Clients satisfaits</h2>
-                <div class="container section-cartes grid">
+                <div class="section-cartes grid">
                     <div class="cartes">
                         <div class="identifiants">
                             <img class="profil" src="./images/alexander-shatov-sIFCJHrUWPM-unsplash.jpg" alt="">
                             <p class="nom">John Doe</p>
                         </div>
                         <div class="commentaires">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui error laborum nihil, adipisci, itaque provident voluptatem ratione iste illum omnis enim dolorum iure atque id sequi? Dolores unde temporibus in?</p>
+                            <p>J’ai été un peu déçu par le temps d’attente, mais le plat principal valait largement la peine. Très bon rapport qualité-prix.</p>
                         </div>
                     </div>
                     <div class="cartes">
@@ -53,7 +68,15 @@
                             <p class="nom">John Doe</p>
                         </div>
                         <div class="commentaires">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui error laborum nihil, adipisci, itaque provident voluptatem ratione iste illum omnis enim dolorum iure atque id sequi? Dolores unde temporibus in?</p>
+                            <p>Une vraie pépite ! Les plats étaient délicieux et le service impeccable. Je reviendrai sans hésiter.</p>
+                        </div>                    </div>
+                        <div class="cartes">
+                        <div class="identifiants">
+                            <img class="profil" src="./images/alexander-shatov-sIFCJHrUWPM-unsplash.jpg" alt="">
+                            <p class="nom">John Doe</p>
+                        </div>
+                        <div class="commentaires">
+                            <p>L’ambiance est chaleureuse, le personnel aux petits soins et la cuisine... un régal ! Mention spéciale pour le dessert maison.</p>
                         </div>                    </div>
                     <div class="cartes">
                         <div class="identifiants">
@@ -61,7 +84,7 @@
                             <p class="nom">John Doe</p>
                         </div>
                         <div class="commentaires">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui error laborum nihil, adipisci, itaque provident voluptatem ratione iste illum omnis enim dolorum iure atque id sequi? Dolores unde temporibus in?</p>
+                            <p>Le décor est magnifique, les portions généreuses et le menu très varié. Je recommande vivement !</p>
                         </div>                    </div>
                     <div class="cartes">
                         <div class="identifiants">
@@ -69,7 +92,7 @@
                             <p class="nom">John Doe</p>
                         </div>
                         <div class="commentaires">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui error laborum nihil, adipisci, itaque provident voluptatem ratione iste illum omnis enim dolorum iure atque id sequi? Dolores unde temporibus in?</p>
+                            <p>Une expérience culinaire exceptionnelle ! Chaque bouchée était un voyage. Bravo au chef !</p>
                         </div>                    </div>
                     <div class="cartes">
                         <div class="identifiants">
@@ -77,15 +100,7 @@
                             <p class="nom">John Doe</p>
                         </div>
                         <div class="commentaires">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui error laborum nihil, adipisci, itaque provident voluptatem ratione iste illum omnis enim dolorum iure atque id sequi? Dolores unde temporibus in?</p>
-                        </div>                    </div>
-                    <div class="cartes">
-                        <div class="identifiants">
-                            <img class="profil" src="./images/alexander-shatov-sIFCJHrUWPM-unsplash.jpg" alt="">
-                            <p class="nom">John Doe</p>
-                        </div>
-                        <div class="commentaires">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui error laborum nihil, adipisci, itaque provident voluptatem ratione iste illum omnis enim dolorum iure atque id sequi? Dolores unde temporibus in?</p>
+                            <p>Simple, efficace et savoureux. Parfait pour un déjeuner entre collègues.</p>
                         </div>                    </div>
                 </div>
             </div>

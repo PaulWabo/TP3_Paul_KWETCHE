@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue dans notre restaurant, où saveurs et convivialité se rencontrent !
+Découvrez une cuisine authentique, préparée avec des ingrédients frais et de qualité. Que ce soit pour un repas entre
+ amis, en famille ou un moment romantique, notre équipe vous accueille dans une ambiance chaleureuse et raffinée.
+  Réservez votre table dès maintenant !">
     <title>Ma Commande</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
 </head>
 <body>
     <header>
         <div class="container nav">
             <a href="index.html"><img src="./images/PAUL’S & co..png" alt="logo"></a>
-            <ul>
+            <ul class="menu">
                 <li><a class="btn" href="index.html">ACCUEIL</a></li>
                 <li><a class="btn" href="Reservation.html">RESERVATION</a></li>
                 <li><a class="btn" href="Restaurant.html">RESTAURANT</a></li>
                 <li><a class="btn actuel commande" href="Ma commande.html">MA COMMANDE</a></li>
             </ul>
+            <button class="menu-button" aria-label="Menu">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+            </button>
         </div>
     </header>
-
     <main class="container">
     <h1>Ma Commande</h1>
-    <section class="container flex">
-        <div>
+    <div class="container flex facture">
+        <div class="tableau">
             <h3>Entrée</h3>
             <table>
                 <thead>
@@ -130,7 +141,7 @@
 
             </div>
         </div>
-    </section>
+    </div>
     </main>
 
     <footer>

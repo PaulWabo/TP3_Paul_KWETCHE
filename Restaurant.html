@@ -1,42 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue dans notre restaurant, où saveurs et convivialité se rencontrent !
+Découvrez une cuisine authentique, préparée avec des ingrédients frais et de qualité. Que ce soit pour un repas entre
+ amis, en famille ou un moment romantique, notre équipe vous accueille dans une ambiance chaleureuse et raffinée.
+  Réservez votre table dès maintenant !">
     <title>Reservation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
 </head>
 <body>
     <header>
         <div class="container nav">
             <a href="index.html"><img src="./images/PAUL’S & co..png" alt="logo"></a>
-            <ul>
+            <ul class="menu">
                 <li><a class="btn" href="index.html">ACCUEIL</a></li>
                 <li><a class="btn" href="Reservation.html">RESERVATION</a></li>
                 <li><a class="btn actuel" href="Restaurant.html">RESTAURANT</a></li>
                 <li><a class="btn commande" href="Ma commande.html">MA COMMANDE</a></li>
             </ul>
+            <button class="menu-button" aria-label="Menu">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+            </button>
         </div>
     </header>
 
     <main class="container">
         <h1>RESTAURANT</h1>
-        <div class="images-restaurant grid-restaurant">
-            <img  src="./images/alex-haney-CAhjZmVk5H4-unsplash.jpg" alt="">
-            <img  src="./images/jason-leung-poI7DelFiVA-unsplash.jpg" alt="">
+        <div class="grid-restaurant">
+            <img class="image-1"  src="./images/alex-haney-CAhjZmVk5H4-unsplash.jpg" alt="">
+            <img class="image-2" src="./images/jason-leung-poI7DelFiVA-unsplash.jpg" alt="">
             <img class="image-3" src="./images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
             <img class="image-4" src="./images/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg" alt="">
             <img class="image-5" src="./images/nathan-dumlao-X_bbCAYzlTs-unsplash.jpg" alt="">
-            <img  src="./images/jessie-mccall-guXX_Wm-wnY-unsplash.jpg" alt="">
+            <img class="image-6" src="./images/jessie-mccall-guXX_Wm-wnY-unsplash.jpg" alt="">
         </div>
         <div class="references ">
-            <div>
+            <div class="texte">
                 <h2>Adresse</h2>
                 <h3>1660 boul de L'entente</h3><br>
                 <h2>Téléphone</h2>
-                <h3><a href="" class="tel">+1 (123) 456 7890 </a></h3><br>
+                <h3><a href="tel : +11234567890" class="tel">+1 (123) 456 7890 </a></h3><br>
                 <h2>Courriel</h2>
-                <h3><a href="" class="mail">exemple@gmail.com</a></h3>
+                <h3><a href="mailto:exemple@gmail.com" >exemple@gmail.com</a></h3>
             </div>
             <iframe class="localisation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11978.080170796376!2d-71.26802122153013!3d46.793613122840995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb896ec160e138b%3A0x49457c1ca2c4a492!2sC%C3%A9gep%20Garneau!5e0!3m2!1sfr!2sca!4v1747021345703!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
